@@ -21,7 +21,7 @@ const Solutions = () => {
     {
       icon: Code,
       title: 'Desenvolvimento customizado',
-      description: 'Tailored software solutions built with cutting-edge technologies.',
+      description: 'Soluções de softwares construídas com tecnologias de ponta.',
       features: ['Web Applications', 'Mobile Apps', 'API Development']
     },
     {
