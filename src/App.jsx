@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './components/Modal/Modal';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster.jsx';
 import Header from '@/components/Header';
@@ -11,6 +13,9 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 function App() {
+  const [isPolicyOpen, setIsPolicyOpen] = useState(false);
+  const togglePolicyModal = () => setIsPolicyOpen(!isPolicyOpen);
+  
   return (
     <>
       <Helmet>
