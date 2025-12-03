@@ -38,18 +38,4 @@ const TermsOfService = () => {
     );
 };
 
-export default PrivacyPolicy;
-
-
-
-
-6.
-
-
-7.
-
-
-8. 
-   
-
-
+export default TermsOfService;

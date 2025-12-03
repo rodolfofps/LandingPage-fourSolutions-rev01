@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './components/Modal/Modal';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
 import { Helmet } from 'react-helmet';
 import { Toaster } from '@/components/ui/toaster.jsx';
 import Header from '@/components/Header';
@@ -15,6 +16,9 @@ import Footer from '@/components/Footer';
 function App() {
   const [isPolicyOpen, setIsPolicyOpen] = useState(false);
   const togglePolicyModal = () => setIsPolicyOpen(!isPolicyOpen);
+  
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const toggleTermsModal = () => setIsTermsOpen(!isTermsOpen);
   
   return (
     <>
