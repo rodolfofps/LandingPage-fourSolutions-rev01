@@ -18,7 +18,7 @@ const Modal = ({ isOpen, onClose, children, title }) => {
         </div>
       </div>
     </div>,
-    document.getElementById('modal-root')// Renders into a specific root or body
+    document.getElementById('modal-root')
   );
 };
 

@@ -84,7 +84,7 @@ const About = () => {
         }}>
           <h3 className="text-3xl font-bold mb-6">Transformando negócios através da Tecnologia</h3>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            A TechVision é uma empresa de consultoria de TI de destaque dedicada a ajudar empresas a navegar pelo complexo mundo da tecnologia. Nossa equipe de consultores especialistas traz profundo conhecimento do setor e expertise técnica para cada projeto.
+            A FourSolutions é uma empresa de consultoria de TI de destaque dedicada a ajudar empresas a navegar pelo complexo mundo da tecnologia. Nossa equipe de consultores especialistas traz profundo conhecimento do setor e expertise técnica para cada projeto.
           </p>
           <p className="text-gray-300 mb-4 leading-relaxed">
             Somos especializados em soluções em nuvem, cibersegurança, desenvolvimento de software personalizado e transformação digital. Nossa abordagem combina pensamento estratégico com implementação prática para entregar resultados mensuráveis.

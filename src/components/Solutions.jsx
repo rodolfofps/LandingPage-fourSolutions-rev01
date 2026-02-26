@@ -4,7 +4,12 @@ import { Cloud, Shield, Code, Database, Smartphone, Cpu, Network, BarChart, Comp
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 
+
 const Solutions = () => {
+  const handleRedirectToContact = () => {
+    const section = document.getElementById("contact");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
   const solutions = [
     {
       icon: ComputerIcon,
@@ -50,7 +55,7 @@ const Solutions = () => {
           <span className="text-orange-500 font-semibold text-lg">O que oferecemos</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6">Soluções</h2>
           <p className="text-gray-400 text-xl max-w-3xl mx-auto">
-          Soluções abrangentes de TI projetadas para atender aos desafios únicos do seu negócio
+            Soluções diversas de TI projetadas para atender aos desafios únicos do seu negócio
           </p>
         </motion.div>
 
@@ -84,9 +89,8 @@ const Solutions = () => {
                   </div>
                 ))}
               </div>
-
               <Button
-                onClick={handleLearnMore}
+                onClick={handleRedirectToContact}
                 variant="ghost"
                 className="w-full text-orange-500 hover:bg-orange-500/10 mt-2"
               >
