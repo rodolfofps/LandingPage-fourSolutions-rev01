@@ -86,7 +86,7 @@ const Portfolio = () => {
                 </div>
 
                 <Button onClick={handleViewDetails} variant="outline" className="w-full border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white group">
-                  View Details
+                  Ver detalhes
                   <ExternalLink className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
                 </Button>
               </div>

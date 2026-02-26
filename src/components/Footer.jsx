@@ -4,12 +4,16 @@ import { Facebook, Twitter, Linkedin, Instagram, Github } from 'lucide-react';
 
 import Modal from './Modal/Modal';
 import PrivacyPolicy from './PrivacyPolicy';
+import TermsOfService from './TermsOfService';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const [isPolicyOpen, setIsPolicyOpen] = useState(false);
   const togglePolicyModal = () => setIsPolicyOpen(!isPolicyOpen);
+
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
+  const toggleTermsModal = () => setIsTermsOpen(!isTermsOpen);
 
   const footerLinks = {
     company: [
@@ -145,9 +149,16 @@ const Footer = () => {
                 Política de Privacidade
               </button>
 
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+              <button
+                onClick={toggleTermsModal}
+                className="text-gray-400 hover:text-orange-500 transition-colors"
+              >
                 Termos de Serviço
-              </a>
+              </button>
+
+              {/*  { { <a href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
+                Termos de Serviço }
+              </a> } */}
             </div>
           </div>
         </div>
@@ -160,6 +171,14 @@ const Footer = () => {
         title="Política de Privacidade"
       >
         <PrivacyPolicy />
+      </Modal>
+
+      <Modal
+        isOpenTerms={isTermsOpen}
+        onCloseTerms={toggleTermsModal}
+        titleTerms="Termos de Serviço"
+      >
+        <TermsOfService />
       </Modal>
 
     </footer>
