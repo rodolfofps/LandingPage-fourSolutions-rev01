@@ -174,9 +174,9 @@ const Footer = () => {
       </Modal>
 
       <Modal
-        isOpenTerms={isTermsOpen}
-        onCloseTerms={toggleTermsModal}
-        titleTerms="Termos de Serviço"
+        isOpen={isTermsOpen}
+        onClose={toggleTermsModal}
+        title="Termos de Serviço"
       >
         <TermsOfService />
       </Modal>
