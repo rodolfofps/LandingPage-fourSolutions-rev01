@@ -2,6 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
 
+import imgFunilaria from '../assets/imagemFunilaria.png';
+import imgTranskopp from '../assets/idVisualTranskopp.png';
+// import imgFunilaria from '../assets/imagemFunilaria.png';
+
+
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -10,23 +16,23 @@ const Testimonials = () => {
       company: '',
       rating: 5,
       text: 'Agradeço imensamente à equipe 4 Solutions pelo apoio e parceria',
-      image: 'Professional female executive in business attire'
+      image: imgFunilaria
     },
     {
-      name: 'Consuloria Empresarial',
+      name: 'Transkopp',
       position: 'Seviços',
       company: '',
       rating: 5,
-      text: 'Excelente trabalho! O site ficou moderno, rápido e muito funcional. Atendimento sempre disponível para tirar dúvidas e propor soluções. Recomendo para quem busca qualidade e profissionalismo.',
-      image: 'Professional male executive in modern office'
+      text: 'Excelente trabalho! O app ficou moderno, rápido e muito funcional. A aplicação voltada para o gerenciamento do controle de ponto dos colaboradores agilizou processos e centralizou as operações.',
+      image: imgTranskopp
     },
     {
-      name: 'Contabilidade Maria',
+      name: 'Transkopp / Prada Metalúrgica',
       position: 'Serviços',
       company: '',
       rating: 5,
-      text: 'Our digital transformation journey with TechVision exceeded all expectations. Revenue increased by 150% within the first year. They are true technology partners.',
-      image: 'Professional female technology leader'
+      text: 'Serviço de acompanhamento de processos tem agilizado a gestão das atividades.',
+      image: imgTranskopp
     },
 
   ];
@@ -61,7 +67,7 @@ const Testimonials = () => {
 
               <div className="flex items-center gap-4 mb-6">
                 <div className="relative">
-                  <img alt={testimonial.name} className="w-16 h-16 rounded-full object-cover border-2 border-orange-500" src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
+                <img alt={testimonial.name} className="w-16 h-16 rounded-full object-cover border-2 border-orange-500" src={testimonial.image} />
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">{testimonial.name}</h4>
